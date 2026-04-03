@@ -1,6 +1,6 @@
 # Network Intrusion Detection System (NIDS)
 
-[cite_start]A real-time network sniffer and intrusion detection system developed for identifying malicious traffic patterns. [cite: 28, 29]
+[cite_start]A real-time network sniffer and intrusion detection system developed for identifying malicious traffic patterns. [cite: 25]
 
 ## 🚀 Features
 * [cite_start]**Real-time Sniffing:** Captures network traffic using Scapy. [cite: 28]
