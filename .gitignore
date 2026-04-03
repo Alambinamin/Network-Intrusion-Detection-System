@@ -1,0 +1,7 @@
+nids_env/
+__pycache__/
+*.pkl
+*.csv
+*.txt
+*.png
+*.log
