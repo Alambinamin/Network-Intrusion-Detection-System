@@ -8,7 +8,7 @@ from scapy.all import sniff, IP, TCP, UDP
 
 
 warnings.filterwarnings("ignore")
-print("--- NIDS RUNNING: WITH CSV LOGGING ---")
+print("NIDS RUNNING: WITH CSV LOGGING")
 
 
 try:
