@@ -6,7 +6,7 @@ from sklearn.ensemble import RandomForestClassifier
 import pickle
 import os
 
-print("--- Step 1: Loading Dataset ---")
+print(" Step 1: Loading Dataset ")
 cols = ['duration', 'protocol_type', 'service', 'flag', 'src_bytes', 'dst_bytes',
         'land', 'wrong_fragment', 'urgent', 'hot', 'num_failed_logins',
         'logged_in', 'num_compromised', 'root_shell', 'su_attempted',
@@ -21,7 +21,7 @@ cols = ['duration', 'protocol_type', 'service', 'flag', 'src_bytes', 'dst_bytes'
         'dst_host_srv_rerror_rate', 'label', 'difficulty_level']
 
 if not os.path.exists('KDDTrain+.txt'):
-    print("ERROR: KDDTrain+.txt not found! Please download it.")
+    print("ERROR: KDDTrain+.txt not found!")
     exit()
 
 df = pd.read_csv('KDDTrain+.txt', names=cols)
@@ -31,7 +31,7 @@ print(f"Loaded {len(df)} rows.")
 df['binary_label'] = df['label'].apply(lambda x: 0 if x == 'normal' else 1)
 
 
-print("--- Step 2: Encoding Data ---")
+print(" Step 2: Encoding Data ")
 le_proto = LabelEncoder()
 le_service = LabelEncoder()
 le_flag = LabelEncoder()
@@ -49,7 +49,7 @@ X = df.drop(['label', 'difficulty_level', 'binary_label'], axis=1)
 y = df['binary_label']
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
 
-print("--- Step 3: Training Model ---")
+print("Step 3: Training Model")
 clf = RandomForestClassifier(n_estimators=20, random_state=42)
 clf.fit(X_train, y_train)
 
