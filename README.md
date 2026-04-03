@@ -1,16 +1,16 @@
 # Network Intrusion Detection System (NIDS)
 
-[cite_start]A real-time network sniffer and intrusion detection system developed for identifying malicious traffic patterns. [cite: 25]
+A real-time network sniffer and intrusion detection system developed for identifying malicious traffic patterns.
 
 ## 🚀 Features
-* [cite_start]**Real-time Sniffing:** Captures network traffic using Scapy. [cite: 28]
-* [cite_start]**Malicious Detection:** Engineered to identify suspicious patterns within a network. [cite: 29]
-* [cite_start]**Live Monitoring:** Integrated dashboard for network activity on Ubuntu. [cite: 30]
+* **Real-time Sniffing:** Captures network traffic using Scapy.
+* **Malicious Detection:** Engineered to identify suspicious patterns within a network.
+* **Live Monitoring:** Integrated dashboard for network activity on Ubuntu.
 
 ## 🛠 Tech Stack
-* [cite_start]**Language:** Python [cite: 27]
-* [cite_start]**Protocols:** DNS, Scapy [cite: 27]
-* [cite_start]**Intelligence:** Machine Learning [cite: 27]
+* **Language:** Python
+* **Protocols:** DNS, Scapy
+* **Intelligence:** Machine Learning
 
 ## ⚙️ Setup
 1. Clone the repo: `git clone https://github.com/Alambinamin/Network-Intrusion-Detection-System.git`
